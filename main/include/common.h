@@ -1,0 +1,24 @@
+#pragma once
+
+#include <assert.h>
+#include <stdbool.h>
+#include <stdio.h>
+#include <string.h>
+
+#include "esp_log.h"
+#include "esp_random.h"
+#include "nvs_flash.h"
+#include "sdkconfig.h"
+
+#include <freertos/FreeRTOS.h>
+#include <freertos/task.h>
+
+#include "host/ble_hs.h"
+#include "host/ble_uuid.h"
+#include "host/util/util.h"
+#include "nimble/ble.h"
+#include "nimble/nimble_port.h"
+#include "nimble/nimble_port_freertos.h"
+
+#define TAG "ECHO_NOMAD"
+#define DEVICE_NAME "ECHO_NOMAD"
